@@ -44,20 +44,10 @@ begin
 		go_mul <= '1';
 	end process;
 	
-	-- process(res_32)
-	-- begin
-		-- ref <= FP_TO_SIGNED(res_32, 16);
-	-- end process;
-	
 	process(res_32)
 	begin
-		refa <= res_32;
-		vpv_pt <= SIGNED_TO_FP(vpv'delayed(100 ns));
-		ipv_pt <= SIGNED_TO_FP(ipv'delayed(100 ns));
-		go_mul <= '1';
+		ref <= FP_TO_SIGNED(res_32, 16);
 	end process;
-	
-	--if ref < ref'delayed(100 ns);
 end Behavioral;
 
 	
