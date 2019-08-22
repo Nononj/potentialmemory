@@ -19,7 +19,6 @@ architecture Behavioral of mppt2 is
 	signal ipv_pt : std_logic_vector(31 downto 0);
 	signal res_32 : std_logic_vector(31 downto 0);
 	signal go_mul: std_logic;
-	signal refa : std_logic_vector(31 downto 0);
 	
 begin
 	
