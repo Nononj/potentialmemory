@@ -49,10 +49,7 @@ architecture Behavioral of tmppt2 is
 		wait for 10 ns;
 			tvpv <="0000000000000011" ;
 			tipv <="0000000000011111" ;
-		wait for 60 ns;
-			tvpv <="0000000000000001" ;
-			tipv <="0000000000000001" ;
-		wait for 10 ns;
+		wait for 100 ns;
 	end process;
 	
 end Behavioral;
